@@ -1,0 +1,123 @@
+/* =========================================
+   VARIABLES Y TEMAS (BOOTSTRAP ADAPTADO)
+   ========================================= */
+
+:root,
+[data-bs-theme=light] {
+  /* Colores Base Bootstrap Light */
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --bs-secondary-bg: #f8f9fa;
+  --bs-tertiary-bg: #e9ecef;
+  --bs-border-color: #dee2e6;
+  --bs-emphasis-color: #000000;
+  
+  /* Identidad Magna Solutions */
+  --gold-main: #D4AF37;
+  --gold-glow: rgba(212, 175, 55, 0.2);
+  --nav-bg: rgba(255, 255, 255, 0.85);
+}
+
+[data-bs-theme=dark] {
+  color-scheme: dark;
+  /* Colores Base Bootstrap Dark (Ajustados a tu estilo Luxury) */
+  --bs-body-bg: #000000; 
+  --bs-body-color: #dee2e6;
+  --bs-secondary-bg: #080808;
+  --bs-tertiary-bg: #1a1d20;
+  --bs-border-color: #343a40;
+  --bs-emphasis-color: #ffffff;
+  
+  /* Identidad Magna Solutions */
+  --gold-main: #D4AF37;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+  --nav-bg: rgba(0, 0, 0, 0.85);
+}
+
+/* =========================================
+   ESTILOS BASE
+   ========================================= */
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+/* =========================================
+   CLASES DE UTILIDAD (VIBE-COMPATIBLE)
+   ========================================= */
+
+/* Reemplazan bg-black, bg-[#080808], etc. */
+.bg-custom-main { background-color: var(--bs-body-bg) !important; }
+.bg-custom-sec { background-color: var(--bs-secondary-bg) !important; }
+.text-custom-main { color: var(--bs-body-color) !important; }
+.border-custom { border-color: var(--bs-border-color) !important; }
+
+/* Estética de Lujo */
+.gold-glow-text {
+  color: var(--gold-main);
+  text-shadow: 0 0 20px var(--gold-glow);
+}
+
+.text-gold-main {
+  color: var(--gold-main) !important;
+}
+
+.glass-card {
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold-main);
+}
+
+/* Botón Principal */
+.btn-magna {
+  background: var(--gold-main);
+  color: #000 !important;
+  padding: 1rem 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-magna:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px var(--gold-glow);
+}
+
+/* Navegación Adaptativa */
+nav {
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+/* Animaciones de aura para servicios */
+.service-aura {
+  position: relative;
+  display: inline-block;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  border: 2px solid var(--gold-main);
+  opacity: 0.3;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  100% { transform: scale(1.1); opacity: 0; }
+}
