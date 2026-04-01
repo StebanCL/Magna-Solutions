@@ -1,160 +1,251 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magna Solutions S.A.S. | Modern Luxury</title>
+    <title>Magna Solutions SAS | Soluciones Empresariales Integrales</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F172A',
+                        gold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/logo/magna_logo.png">
 </head>
-<body class="scroll-smooth">
+<body class="bg-slate-50 text-midnight font-sans">
 
-    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/5 py-4 px-6 flex justify-between items-center">
-        <div class="text-xl font-black italic">
-            MAGNA<span class="text-gold-main" style="color:#D4AF37">SOLUTIONS</span>
-        </div>
-        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
-            <a href="#inicio" class="hover:text-gold-main transition">Inicio</a>
-            <a href="#servicios" class="hover:text-gold-main transition">Servicios</a>
-            <a href="#nosotros" class="hover:text-gold-main transition">Sobre Nosotros</a>
-            <a href="#contacto" class="hover:text-gold-main transition">Contacto</a>
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm text-white border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="assets/img/logo/logo_claro.jpg" alt="Magna Solutions Logo" class="h-10">
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest items-center">
+                <li><a href="#inicio" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="#servicios" class="hover:text-gold transition">Servicios</a></li>
+                <li><a href="#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magnasolutionssas@gmail.com&su=Consulta%20desde%20Sitio%20Web" 
+                        target="_blank" 
+                        class="bg-gold text-midnight px-6 py-2 rounded-full hover:bg-white transition font-bold">
+                        Contacto
+                    </a>
+                </li>            
+            </ul>
+
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
         </div>
 
-        <button id="theme-toggle" class="ms-4 p-2 rounded-full border border-gold-main hover:bg-gold-main/10 transition">
-            <span id="theme-icon">🌙</span>
-        </button>
+        <div id="mobile-menu" class="hidden md:hidden bg-midnight/98 border-t border-gold/10 w-full overflow-hidden transition-all duration-300">
+            <div class="flex flex-col items-center py-10 gap-6">
+                <a href="#inicio" class="text-xl uppercase tracking-widest mobile-link">Inicio</a>
+                <a href="#servicios" class="text-xl uppercase tracking-widest mobile-link">Servicios</a>
+                <a href="#nosotros" class="text-xl uppercase tracking-widest mobile-link">Nosotros</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magnasolutionssas@gmail.com&su=Consulta%20desde%20Sitio%20Web" 
+                    target="_blank" 
+                    class="bg-gold text-midnight px-6 py-2 rounded-full hover:bg-white transition font-bold">
+                    Contacto
+                    </a>            
+            </div>
+        </div>
     </nav>
 
-    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src="img/hero-deportes.jpg" class="absolute inset-0 w-full h-full object-cover opacity-30">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
-        <div class="relative z-10 text-center px-6">
-            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight">
-                Hacemos que las empresas<br>
-                <span class="gold-glow-text">operen sin preocupaciones.</span>
-            </h1>
-            <a href="#contacto" class="btn-magna">COTIZA TU SOLUCIÓN</a>
+    <header id="inicio" class="relative h-screen flex items-center justify-center text-center text-white stage-transition">
+        <div class="absolute inset-0 bg-midnight/60"></div>
+        <div class="relative z-10 px-4 max-w-5xl">
+            <h1 id="stage-title" class="text-5xl md:text-8xl font-black mb-6 uppercase tracking-tighter leading-tight"></h1>
+            <p id="stage-desc" class="text-lg md:text-2xl text-gold font-light italic mb-8"></p>
+            <a href="#servicios" class="inline-block border-2 border-gold text-gold px-10 py-3 font-bold uppercase tracking-widest hover:bg-gold hover:text-midnight transition">Explorar Áreas</a>
+        </div>
+        <div id="dots-container" class="absolute bottom-12 flex gap-3"></div>
+    </header>
+
+    <section id="servicios" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold uppercase">Nuestras <span class="text-gold">Líneas de Acción</span></h2>
+            <p class="text-slate-500 mt-4 italic">Soluciones integrales adaptadas a las necesidades del entorno empresarial actual.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard1.jpg" alt="SST">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Seguridad y Salud en el Trabajo</h3>
+                    <p class="text-white/80 text-sm mb-4">Implementación SG-SST, Auditorías y Gestión de Riesgos.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Plan Anual SST</li>
+                        <li>• Brigadas de Emergencia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard2.jpg" alt="Outsourcing">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Outsourcing</h3>
+                    <p class="text-white/80 text-sm mb-4">Apoyo administrativo y contabilidad estratégica.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Gestión Contable</li>
+                        <li>• Consultoría Empresarial</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard3.jpg" alt="Mantenimiento">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Mantenimiento</h3>
+                    <p class="text-white/80 text-sm mb-4">Reparaciones eléctricas, plomería y adecuaciones.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Pintura Empresarial</li>
+                        <li>• Servicios Generales</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard4.jpg" alt="Logística">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Logística y Eventos</h3>
+                    <p class="text-white/80 text-sm mb-4">Organización de eventos corporativos y team building.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Olimpiadas Empresariales</li>
+                        <li>• Integraciones de Fin de Año</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard5.jpg" alt="Dotaciones">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Dotaciones y Mobiliario</h3>
+                    <p class="text-white/80 text-sm mb-4">Uniformes empresariales y mobiliario ergonómico.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Seguridad Industrial</li>
+                        <li>• Sillas Ergonómicas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pcard group">
+                <img src="./assets/img/pcards/pcard6.jpg" alt="Asistencias">
+                <div class="pcard-overlay">
+                    <h3 class="text-gold text-2xl font-bold uppercase">Asistencias y Servicios</h3>
+                    <p class="text-white/80 text-sm mb-4">Servicios de limpieza, jardinería y bienestar asistencial.</p>
+                    <ul class="text-[10px] text-slate-300 uppercase tracking-widest leading-loose">
+                        <li>• Spa y Chef Empresarial</li>
+                        <li>• Cultura Saludable</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-24 px-6 bg-[#080808]">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gold-main tracking-[0.3em] text-xs font-bold mb-6 uppercase" style="color:#D4AF37">El Aliado Estratégico</p>
-            <h2 class="text-3xl md:text-5xl font-bold mb-8">Soluciones integrales para funcionar mejor.</h2>
-            <p class="text-gray-400 text-lg leading-relaxed">
-                Integramos outsourcing contable, apoyo administrativo, SST, bienestar laboral, salud mental, actividad física, mantenimiento y eventos en una sola solución moderna.
-            </p>
+    <section id="nosotros" class="bg-midnight text-white py-24 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-gold text-sm font-bold tracking-[0.3em] uppercase mb-4">Sobre Magna Solutions</h2>
+                <h3 class="text-4xl font-bold mb-6 italic">Impulsamos empresas más productivas y humanas.</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Somos el aliado estratégico que su empresa necesita para funcionar mejor. Integramos outsourcing contable, apoyo administrativo, SST y bienestar laboral en una sola solución diseñada para optimizar procesos.
+                </p>
+                <div class="mt-4">
+                    <a href="./assets/img/folleto.jpg" target="_blank" class="text-gold border-b border-gold hover:text-white hover:border-white transition pb-1 uppercase text-xs font-bold tracking-widest">
+                        Ver Portafolio Completo (Folleto PDF)
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./assets/img/extrastages1.jpg" alt="Equipo Magna Solutions" class="rounded-2xl shadow-2xl border border-gold/20">
+                <div class="absolute -bottom-6 -right-6 bg-gold text-midnight p-8 rounded-xl hidden lg:block">
+                    <span class="text-4xl font-black">100%</span>
+                    <p class="text-[10px] font-bold uppercase">Efectividad Operativa</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-32 px-6">
-        <div class="max-w-6xl mx-auto space-y-40">
-            
-            <div class="flex flex-col md:flex-row items-center gap-20">
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="service-aura">
-                        <div class="pulse-ring"></div>
-                        <img src="img/servicio-bienestar.jpg" class="w-80 h-80 rounded-full object-cover">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="text-gold-main font-bold">01. BIENESTAR</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-6">Actividad Física Corporativa</h3>
-                    <p class="text-gray-400 mb-8">Mejora el clima laboral con pausas activas, yoga, rumba terapia y entrenamientos funcionales diseñados para tu equipo.</p>
-                    <a href="#contacto" class="text-sm font-bold border-b border-gold-main pb-2 hover:text-gold-main transition">CONSULTAR SERVICIO</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row-reverse items-center gap-20">
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="service-aura">
-                        <div class="pulse-ring"></div>
-                        <img src="img/servicio-gestion.jpg" class="w-80 h-80 rounded-full object-cover">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="text-gold-main font-bold">02. GESTIÓN</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-6">Administración Empresarial</h3>
-                    <p class="text-gray-400 mb-8">Optimiza procesos operativos y libera a tu empresa para enfocarse en el crecimiento estratégico.</p>
-                    <a href="#contacto" class="text-sm font-bold border-b border-gold-main pb-2 hover:text-gold-main transition">CONSULTAR SERVICIO</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center gap-20">
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="service-aura">
-                        <div class="pulse-ring"></div>
-                        <img src="img/servicio-mantenimiento.jpg" class="w-80 h-80 rounded-full object-cover">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="text-gold-main font-bold">03. SOPORTE</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-6">Mantenimiento Técnico</h3>
-                    <p class="text-gray-400 mb-8">Garantizamos espacios impecables con mantenimiento preventivo, correctivo y adecuaciones profesionales.</p>
-                    <a href="#contacto" class="text-sm font-bold border-b border-gold-main pb-2 hover:text-gold-main transition">CONSULTAR SERVICIO</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row-reverse items-center gap-20">
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="service-aura">
-                        <div class="pulse-ring"></div>
-                        <img src="img/servicio-eventos.jpg" class="w-80 h-80 rounded-full object-cover">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="text-gold-main font-bold">04. EXPERIENCIAS</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-6">Logística de Eventos</h3>
-                    <p class="text-gray-400 mb-8">Planeamos y ejecutamos eventos corporativos que conectan equipos y refuerzan el valor de tu marca.</p>
-                    <a href="#contacto" class="text-sm font-bold border-b border-gold-main pb-2 hover:text-gold-main transition">CONSULTAR SERVICIO</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-32 px-6 bg-black">
+    <section id="contacto" class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-center text-4xl font-black mb-20 gold-glow-text">Portafolio Integrado</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="glass-card p-10">
-                    <h4 class="text-xl font-bold mb-4 text-gold-main">SST</h4>
-                    <p class="text-gray-500 text-sm">Prevención de riesgos y sistemas de gestión para la seguridad de tus colaboradores.</p>
+            <div class="bg-midnight rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="p-12 md:w-1/2 flex flex-col justify-center border-b md:border-b-0 md:border-r border-gold/20">
+                    <h2 class="text-gold text-4xl font-bold mb-6 uppercase">Hablemos</h2>
+                    <p class="text-slate-300 mb-8">Estamos listos para atender los requerimientos logísticos y operativos de su compañía.</p>
+                    
+                    <div class="space-y-6">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magnasolutionssas@gmail.com" target="_blank" class="flex items-center gap-4 group text-white">
+                            <div class="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center group-hover:bg-gold transition">
+                                <span class="text-gold group-hover:text-midnight text-xl">📧</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gold uppercase font-bold text-left">Correo Electrónico</p>
+                                <p class="text-lg">magnasolutionssas@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/573212681540" target="_blank" class="flex items-center gap-4 group text-white">
+                            <div class="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center group-hover:bg-gold transition">
+                                <span class="text-gold group-hover:text-midnight text-xl">📱</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gold uppercase font-bold text-left">Línea de Atención</p>
+                                <p class="text-lg">+57 321 268 1540</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/573167564799" target="_blank" class="flex items-center gap-4 group text-white">
+                            <div class="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center group-hover:bg-gold transition">
+                                <span class="text-gold group-hover:text-midnight text-xl">📱</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gold uppercase font-bold text-left">Línea de Atención</p>
+                                <p class="text-lg">+57 316 756 4799</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="glass-card p-10">
-                    <h4 class="text-xl font-bold mb-4 text-gold-main">Outsourcing Contable</h4>
-                    <p class="text-gray-500 text-sm">Apoyo administrativo y contable eficiente para el control total de tu negocio.</p>
-                </div>
-                <div class="glass-card p-10">
-                    <h4 class="text-xl font-bold mb-4 text-gold-main">Dotaciones</h4>
-                    <p class="text-gray-500 text-sm">Equipamiento y mobiliario corporativo con los más altos estándares de calidad.</p>
+
+                <div class="md:w-1/2 relative min-h-[400px]">
+                    <img src="./assets/img/extrastages2.jpg" alt="Contacto Magna" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                         <img src="./assets/img/logo/logo_claro.jpg" alt="Magna" class="h-24 opacity-80">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contacto" class="bg-[#050505] py-24 px-6 border-t border-white/5">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
-            <div>
-                <div class="text-2xl font-black mb-6 italic">MAGNA<span style="color:#D4AF37">SOLUTIONS</span></div>
-                <p class="text-gray-500 text-sm leading-relaxed">Optimizamos recursos y aseguramos bienestar en cada proceso empresarial.</p>
+    <footer class="bg-midnight text-white pt-16 pb-8 px-6 border-t border-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-center md:text-left">
+                <h4 class="text-2xl font-bold tracking-tighter uppercase">MAGNA<span class="text-gold">SOLUTIONS</span></h4>
             </div>
-            <div>
-                <h4 class="text-white font-bold mb-6 text-xs uppercase tracking-widest">Contacto Directo</h4>
-                <a href="mailto:magnasolutionssas@gmail.com" class="block text-gold-main mb-4 hover:underline">magnasolutionssas@gmail.com</a>
-                <div class="text-gray-400 text-sm">
-                    <p>+57 316 756 4799</p>
-                    <p>+57 321 268 1540</p>
-                </div>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-6 text-xs uppercase tracking-widest">Ubicación</h4>
-                <p class="text-gray-400 text-sm">Bogotá Distrito Capital, Colombia.</p>
+            <div class="text-slate-500 text-[10px] text-center md:text-right uppercase tracking-widest">
+                <p>© 2026 Magna Solutions S.A.S.</p>
+                <p>Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <a href="https://wa.me/573212681540" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-[100]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
     <script src="js/main.js"></script>
+
+
 </body>
 </html>
