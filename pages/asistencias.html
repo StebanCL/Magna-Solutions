@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencias | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/asistencias.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-text">
+                <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold">Línea de Bienestar</span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-none mt-4">
+                    Asistencias <br> <span class="text-gold">& Salud</span>
+                </h1>
+                <p class="text-slate-400 mt-8 text-lg max-w-xl leading-relaxed">
+                    Garantizamos entornos impecables y saludables mediante servicios especializados de limpieza, desinfección y bienestar integral para su equipo de trabajo.
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#detalles" class="border border-gold text-gold px-8 py-3 rounded-full font-bold hover:bg-gold hover:text-midnight transition">Ver Portafolio</a>
+                </div>
+            </div>
+            
+            <div class="relative group reveal-img">
+                <div class="absolute -inset-1 bg-gold/20 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-gold/10">
+                    <img src="../assets/img/servicios/asistencias.png" alt="Servicio de Asistencias" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="detalles" class="py-24 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <div class="text-gold text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold uppercase mb-4">Servicios Generales</h3>
+                    <p class="text-slate-400">Limpieza especializada de oficinas, áreas comunes y zonas industriales con altos estándares de higiene.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="text-gold text-4xl mb-4">🌿</div>
+                    <h3 class="text-xl font-bold uppercase mb-4">Jardinería y Paisajismo</h3>
+                    <p class="text-slate-400">Mantenimiento de zonas verdes y diseño de jardines para crear espacios de trabajo inspiradores y naturales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="text-gold text-4xl mb-4">💆</div>
+                    <h3 class="text-xl font-bold uppercase mb-4">Bienestar Laboral</h3>
+                    <p class="text-slate-400">Implementación de jornadas de SPA empresarial, masajes relajantes y actividades de pausa activa para su personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

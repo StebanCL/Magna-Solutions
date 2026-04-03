@@ -1,0 +1,52 @@
+/* --- Estilos Específicos de Asistencias --- */
+
+/* Animación de entrada para texto */
+.reveal-text {
+    animation: slideRight 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Animación para la imagen */
+.reveal-img {
+    animation: slideLeft 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes slideRight {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Tarjetas de características con Glassmorphism */
+.feature-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+/* Scrollbar personalizada para el look de gama alta */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+}

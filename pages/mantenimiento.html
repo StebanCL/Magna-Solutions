@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento Integral | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/mantenimiento.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gold/5 -skew-x-12 transform translate-x-1/4"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="reveal-up">
+                <span class="inline-block bg-gold text-midnight px-3 py-1 text-xs font-bold uppercase tracking-tighter mb-4">Infraestructura & Obra</span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-none">
+                    Mantenimiento <br> <span class="text-gold">Locativo</span>
+                </h1>
+                <p class="text-slate-400 mt-8 text-lg max-w-xl leading-relaxed">
+                    Soluciones técnicas para la preservación y adecuación de sus instalaciones. Nos encargamos de que su infraestructura trabaje para usted, no al revés.
+                </p>
+                <div class="mt-10">
+                    <a href="#especialidades" class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-4 rounded-xl hover:bg-gold hover:text-midnight transition-all duration-500 group">
+                        <span class="font-bold uppercase tracking-widest text-sm">Ver Especialidades</span>
+                        <span class="text-gold group-hover:text-midnight">→</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative reveal-scale">
+                <div class="absolute inset-0 border-2 border-gold/30 rounded-3xl translate-x-4 translate-y-4"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-gold/10 shadow-2xl">
+                    <img src="../assets/img/servicios/mantenimiento.png" alt="Mantenimiento Magna" class="w-full h-auto object-cover transform hover:scale-110 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="especialidades" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="tech-card">
+                    <h3 class="text-gold font-bold mb-2">01. Eléctrico</h3>
+                    <p class="text-slate-400 text-sm">Instalaciones, tableros, iluminación LED y mantenimiento preventivo de redes.</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="text-gold font-bold mb-2">02. Hidráulico</h3>
+                    <p class="text-slate-400 text-sm">Plomería industrial, reparación de fugas, bombas y sistemas de presión.</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="text-gold font-bold mb-2">03. Acabados</h3>
+                    <p class="text-slate-400 text-sm">Pintura profesional, Drywall, pisos epóxicos y adecuación de espacios.</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="text-gold font-bold mb-2">04. Preventivo</h3>
+                    <p class="text-slate-400 text-sm">Planes integrales de mantenimiento periódico para evitar paradas operativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

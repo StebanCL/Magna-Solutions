@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industria Escolar | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F172A',
+                        gold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/escolar.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm text-white border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest items-center">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="hover:text-gold transition">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magnasolutionssas@gmail.com" 
+                    target="_blank" 
+                    class="bg-gold text-midnight px-6 py-2 rounded-full hover:bg-white transition font-bold">
+                        Contacto
+                    </a>
+                </li>            
+            </ul>
+
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-midnight/98 border-t border-gold/10 w-full overflow-hidden transition-all duration-300">
+            <div class="flex flex-col items-center py-10 gap-6">
+                <a href="../index.html" class="text-xl uppercase tracking-widest">Inicio</a>
+                <a href="servicios.html" class="text-xl uppercase tracking-widest">Servicios</a>
+                <a href="../index.html#nosotros" class="text-xl uppercase tracking-widest">Nosotros</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magnasolutionssas@gmail.com" 
+                target="_blank" 
+                class="bg-gold text-midnight px-6 py-4 rounded-full font-bold w-4/5 text-center">
+                    Contacto
+                </a>            
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 bg-gradient-to-b from-midnight via-midnight to-slate-900 border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-6 text-center reveal-header">
+            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-tight italic">
+                Soluciones para la <span class="text-gold">Industria Escolar</span>
+            </h1>
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+                Mobiliario ergonómico y duradero, diseñado para optimizar el aprendizaje y la convivencia en entornos educativos.
+            </p>
+            <div class="mt-10">
+                <a href="#galeria" class="inline-block border border-gold text-gold px-12 py-3 font-bold uppercase hover:bg-gold hover:text-midnight transition-all duration-300 rounded-full tracking-widest text-sm">
+                    Explorar Catálogo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="galeria" class="py-24 px-6 max-w-7xl mx-auto relative reveal-gallery">
+        
+        <div class="main-stage-container relative">
+            
+            <div class="absolute top-1/2 left-0 right-0 z-30 flex justify-between px-6 transform -translate-y-1/2">
+                <button id="prev-slide" class="carousel-btn">‹</button>
+                <button id="next-slide" class="carousel-btn">›</button>
+            </div>
+
+            <div id="slide-strip" class="slide-strip flex h-full transition-transform duration-700 ease-[cubic-bezier(0.87, 0, 0.13, 1)]">
+                
+                <div class="slide flex-shrink-0 w-full h-full relative group active">
+                    <img src="../assets/img/escolar/butaco.jpg" alt="Butaco Fijo" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Butaco <span class="text-white">Fijo</span></h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Estructura metálica reforzada con asiento ergonómico para laboratorios.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/escritorio_profesor.jpg" alt="Cátedra Docente" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Cátedra Docente</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Diseño profesional y funcional optimizado para el aula de clase.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/escritorio_tapa.jpg" alt="Escritorio Tapa" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Escritorio Tapa Superior</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Superficie de alta resistencia con acabados redondeados de seguridad.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/escritorio.jpg" alt="Escritorio Estándar" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Escritorio Estándar</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Solución versátil para diversas áreas administrativas y educativas.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/escualizable.jpg" alt="Mesa Escualizable" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa Escualizable</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Mesa dinámica con ajuste de inclinación para dibujo o lectura.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/Juego_de_mesa_hexagonal.jpg" alt="Mesa Hexagonal" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa Hexagonal</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Ideal para fomentar el trabajo colaborativo y dinámicas grupales.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/juego_de_mesa_rectangular.jpg" alt="Mesa Rectangular" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa Rectangular</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Estructura estable diseñada para múltiples puestos de trabajo.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/juego_de_mesa_trapezoide.png" alt="Mesa Trapezoide" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa Trapezoide</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Diseño inteligente que permite múltiples configuraciones de aula.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/locker.jpg" alt="Locker" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Locker Modular</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Módulos inyectados de alta resistencia, inoxidables y térmicos.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/mesa_plegable.jpg" alt="Mesa Plegable" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa Plegable</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Fácil de almacenar y transportar, perfecta para eventos múltiples.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/mesa_porta_cpu.jpg" alt="Mesa CPU" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Mesa de Informática</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Con soporte integrado para CPU y gestión de cables profesional.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/modulo.jpg" alt="Módulo" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Módulo con Divisiones</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Divisiones en vidrio o acrílico para privacidad y bioseguridad.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/pupitre.jpg" alt="Pupitre" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Pupitre Unipersonal</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Diseño ergonómico estándar bajo lineamientos del Ministerio.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/silla_individual_junior.jpg" alt="Silla Junior" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Silla Junior</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Dimensiones ajustadas para los más pequeños con total estabilidad.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/silla_tapizada_universitaria.jpg" alt="Silla Universitaria" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Silla Universitaria</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Brazo escualizable y asiento tapizado para jornadas largas.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/silla.jpg" alt="Silla Concha" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Silla Concha</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Estructura clásica y resistente, indispensable en cualquier aula.</p>
+                    </div>
+                </div>
+
+                <div class="slide flex-shrink-0 w-full h-full relative group">
+                    <img src="../assets/img/escolar/tablero_acrilico.jpg" alt="Tablero Acrílico" class="main-stage-full-img">
+                    <div class="reveal-content">
+                        <h3 class="text-4xl font-extrabold uppercase text-gold leading-none tracking-tight">Tablero Acrílico</h3>
+                        <p class="text-slate-100 mt-4 max-w-lg text-base leading-relaxed">Superficie blanca de alta calidad para escritura suave y fácil borrado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <div class="thumbnails-grid mt-16 pb-10 reveal-gallery">
+        
+        <div class="thumbnail active" data-slide="0">
+            <div class="thumb-frame"><img src="../assets/img/escolar/butaco.jpg" alt="Butaco"></div>
+            <p class="thumb-title">Butaco</p>
+        </div>
+
+        <div class="thumbnail" data-slide="1">
+            <div class="thumb-frame"><img src="../assets/img/escolar/escritorio_profesor.jpg" alt="Profesor"></div>
+            <p class="thumb-title">E. Profesor</p>
+        </div>
+
+        <div class="thumbnail" data-slide="2">
+            <div class="thumb-frame"><img src="../assets/img/escolar/escritorio_tapa.jpg" alt="Tapa"></div>
+            <p class="thumb-title">E. Tapa</p>
+        </div>
+
+        <div class="thumbnail" data-slide="3">
+            <div class="thumb-frame"><img src="../assets/img/escolar/escritorio.jpg" alt="Escritorio"></div>
+            <p class="thumb-title">Escritorio</p>
+        </div>
+
+        <div class="thumbnail" data-slide="4">
+            <div class="thumb-frame"><img src="../assets/img/escolar/escualizable.jpg" alt="Escualizable"></div>
+            <p class="thumb-title">Escualizable</p>
+        </div>
+
+        <div class="thumbnail" data-slide="5">
+            <div class="thumb-frame"><img src="../assets/img/escolar/Juego_de_mesa_hexagonal.jpg" alt="Hexagonal"></div>
+            <p class="thumb-title">Hexagonal</p>
+        </div>
+
+        <div class="thumbnail" data-slide="6">
+            <div class="thumb-frame"><img src="../assets/img/escolar/juego_de_mesa_rectangular.jpg" alt="Rectangular"></div>
+            <p class="thumb-title">Rectangular</p>
+        </div>
+
+        <div class="thumbnail" data-slide="7">
+            <div class="thumb-frame"><img src="../assets/img/escolar/juego_de_mesa_trapezoide.png" alt="Trapezoide"></div>
+            <p class="thumb-title">Trapezoide</p>
+        </div>
+
+        <div class="thumbnail" data-slide="8">
+            <div class="thumb-frame"><img src="../assets/img/escolar/locker.jpg" alt="Locker"></div>
+            <p class="thumb-title">Locker</p>
+        </div>
+
+        <div class="thumbnail" data-slide="9">
+            <div class="thumb-frame"><img src="../assets/img/escolar/mesa_plegable.jpg" alt="Plegable"></div>
+            <p class="thumb-title">Plegable</p>
+        </div>
+
+        <div class="thumbnail" data-slide="10">
+            <div class="thumb-frame"><img src="../assets/img/escolar/mesa_porta_cpu.jpg" alt="CPU"></div>
+            <p class="thumb-title">M. CPU</p>
+        </div>
+
+        <div class="thumbnail" data-slide="11">
+            <div class="thumb-frame"><img src="../assets/img/escolar/modulo.jpg" alt="Modulo"></div>
+            <p class="thumb-title">Módulo</p>
+        </div>
+
+        <div class="thumbnail" data-slide="12">
+            <div class="thumb-frame"><img src="../assets/img/escolar/pupitre.jpg" alt="Pupitre"></div>
+            <p class="thumb-title">Pupitre</p>
+        </div>
+
+        <div class="thumbnail" data-slide="13">
+            <div class="thumb-frame"><img src="../assets/img/escolar/silla_individual_junior.jpg" alt="Junior"></div>
+            <p class="thumb-title">Junior</p>
+        </div>
+
+        <div class="thumbnail" data-slide="14">
+            <div class="thumb-frame"><img src="../assets/img/escolar/silla_tapizada_universitaria.jpg" alt="Universitaria"></div>
+            <p class="thumb-title">Universitaria</p>
+        </div>
+
+        <div class="thumbnail" data-slide="15">
+            <div class="thumb-frame"><img src="../assets/img/escolar/silla.jpg" alt="Silla"></div>
+            <p class="thumb-title">Silla</p>
+        </div>
+
+        <div class="thumbnail" data-slide="16">
+            <div class="thumb-frame"><img src="../assets/img/escolar/tablero_acrilico.jpg" alt="Tablero"></div>
+            <p class="thumb-title">Tablero</p>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-12">
+        <a href="https://wa.me/573212681540?text=Hola,%20estoy%20interesado%20en%20el%20mobiliario%20escolar." 
+        target="_blank" 
+        class="cotizar-btn">
+            <span>💬</span> Solicitar Cotización Directa
+        </a>
+    </div>
+
+    </section>
+
+    <footer class="bg-midnight py-12 text-center border-t border-gold/20 mt-16">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <a href="https://wa.me/573212681540" target="_blank" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/escolar.js"></script>
+
+</body>
+</html>

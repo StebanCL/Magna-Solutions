@@ -1,0 +1,49 @@
+/* --- Estilos Específicos de Consultoría --- */
+
+/* Animaciones de entrada suave */
+.reveal-text {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.reveal-img {
+    animation: fadeInRight 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(60px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Tarjetas con diseño sobrio y profesional */
+.consulting-card {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.9));
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    border-left: 4px solid #D4AF37;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.consulting-card:hover {
+    transform: scale(1.05);
+    background: rgba(212, 175, 55, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar dorada */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 5px;
+}

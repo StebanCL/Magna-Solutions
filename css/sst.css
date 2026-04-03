@@ -1,0 +1,70 @@
+/* --- Estilos de Seguridad y Salud --- */
+
+/* Animaciones de Entrada */
+.reveal-content {
+    animation: sstFadeUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.reveal-visual {
+    animation: sstFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes sstFadeUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sstFadeIn {
+    from { opacity: 0; filter: grayscale(1) blur(10px); }
+    to { opacity: 1; filter: grayscale(0) blur(0); }
+}
+
+/* Decoración de fondo (Hexágonos sutiles) */
+.hex-grid {
+    position: absolute;
+    inset: -40px;
+    background-image: radial-gradient(#D4AF37 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Tarjetas de SST */
+.sst-card {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 1) 100%);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.sst-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #D4AF37;
+    transition: width 0.4s ease;
+}
+
+.sst-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.sst-card:hover::after {
+    width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border: 3px solid #0F172A;
+    border-radius: 10px;
+}

@@ -90,3 +90,52 @@ mobileLinks.forEach(link => {
         hamburger.innerHTML = '☰';
     });
 });
+
+//Servicios
+
+// Animación de aparición gradual (Intersection Observer)
+const observerOptions = {
+    threshold: 0.1
+};
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Buscamos todas las pcard dentro de la grilla
+            const cards = entry.target.querySelectorAll('.pcard');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, index * 150); // Delay entre cada tarjeta
+            });
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Aplicar estilos iniciales y observar la grilla
+document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector('.reveal-grid');
+    if(grid) {
+        const cards = grid.querySelectorAll('.pcard');
+        cards.forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.6s ease-out";
+        });
+        revealObserver.observe(grid);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", () => {
+            const isHidden = mobileMenu.classList.toggle("hidden");
+            hamburger.textContent = isHidden ? "☰" : "✕";
+        });
+    }
+});

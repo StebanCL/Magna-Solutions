@@ -1,0 +1,56 @@
+/* --- Estilos de Suministros --- */
+
+/* Animaciones */
+.reveal-fade {
+    animation: fadeInSlide 1s ease-out forwards;
+}
+
+.reveal-zoom {
+    animation: zoomIn 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Forma decorativa detrás de la imagen */
+.bg-shape {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+    z-index: -1;
+}
+
+/* Tarjetas de Categoría */
+.cat-card {
+    background: rgba(30, 41, 59, 0.3);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cat-card:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: #D4AF37;
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+}

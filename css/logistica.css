@@ -1,0 +1,62 @@
+/* --- Estilos Dinámicos de Logística --- */
+
+/* Animación de entrada para el Hero */
+.reveal-content {
+    animation: revealIn 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.reveal-frame {
+    animation: frameIn 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes revealIn {
+    from { opacity: 0; transform: translateY(100px); filter: blur(10px); }
+    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes frameIn {
+    from { opacity: 0; transform: scale(0.8) rotate(-5deg); }
+    to { opacity: 1; transform: scale(1) rotate(2deg); }
+}
+
+/* Decoración detrás de la imagen */
+.frame-decoration {
+    position: absolute;
+    inset: -20px;
+    border: 2px solid #D4AF37;
+    border-radius: 2.5rem;
+    opacity: 0.2;
+    z-index: -1;
+    transform: rotate(-4deg);
+}
+
+/* Tarjetas de Eventos */
+.event-card {
+    background: #1e293b;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.event-card:hover {
+    background: #D4AF37;
+    transform: translateY(-10px);
+}
+
+.event-card:hover h3, 
+.event-card:hover p, 
+.event-card:hover span {
+    color: #0F172A;
+    opacity: 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0F172A, #D4AF37);
+    border-radius: 20px;
+}

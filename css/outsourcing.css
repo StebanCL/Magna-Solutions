@@ -1,0 +1,69 @@
+/* --- Estilos de Outsourcing --- */
+
+/* Animaciones */
+.reveal-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.reveal-right {
+    animation: slideInRight 1s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Decoración detrás de la imagen */
+.glass-deco {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #D4AF37, transparent);
+    top: -20px;
+    right: -20px;
+    border-radius: 1rem;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Tarjetas de Outsourcing */
+.out-card {
+    position: relative;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+}
+
+.out-card:hover {
+    background: rgba(212, 175, 55, 0.03);
+    border-color: #D4AF37;
+    transform: translateY(-10px);
+}
+
+.out-card .number {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 4px;
+}

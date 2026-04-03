@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad y Salud en el Trabajo | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/sst.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-40 pb-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-content">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="w-12 h-[2px] bg-gold"></span>
+                    <span class="text-gold uppercase tracking-widest text-xs font-black">Cumplimiento Normativo</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black uppercase italic leading-[0.9] tracking-tighter">
+                    Gestión <br> <span class="text-gold">SG-SST</span>
+                </h1>
+                <p class="text-slate-400 mt-10 text-lg max-w-xl leading-relaxed">
+                    Protegemos el activo más valioso de su empresa: su gente. Diseñamos e implementamos el Sistema de Gestión de Seguridad y Salud en el Trabajo bajo los más altos estándares legales.
+                </p>
+                <div class="mt-12 flex flex-wrap gap-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold text-2xl">🛡️</span>
+                        <span class="text-sm uppercase tracking-wider font-bold">100% Legal</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold text-2xl">📋</span>
+                        <span class="text-sm uppercase tracking-wider font-bold">Auditoría Real</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative reveal-visual">
+                <div class="hex-grid"></div>
+                <div class="relative rounded-[3rem] overflow-hidden border-2 border-gold/30 shadow-[0_0_80px_rgba(212,175,55,0.15)]">
+                    <img src="../assets/img/servicios/sst.png" alt="SST Magna Solutions" class="w-full h-auto object-cover scale-105 hover:scale-100 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-slate-900/50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="sst-card">
+                <h3 class="text-gold text-xl font-bold uppercase mb-4">Diseño y Ejecución</h3>
+                <p class="text-slate-400 text-sm">Creación del Sistema de Gestión desde cero, adaptado al nivel de riesgo y tamaño de su organización.</p>
+            </div>
+            <div class="sst-card">
+                <h3 class="text-gold text-xl font-bold uppercase mb-4">Capacitación</h3>
+                <p class="text-slate-400 text-sm">Formación en brigadas de emergencia, manejo de riesgos y cultura de prevención para todo el personal.</p>
+            </div>
+            <div class="sst-card">
+                <h3 class="text-gold text-xl font-bold uppercase mb-4">Medicina Laboral</h3>
+                <p class="text-slate-400 text-sm">Coordinación de exámenes médicos ocupacionales y seguimiento a condiciones de salud de los trabajadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

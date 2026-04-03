@@ -1,0 +1,105 @@
+/* Asegurar que el enlace no tenga estilos de texto por defecto */
+a.pcard {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pcard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background-color: #0F172A;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    height: 450px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Corregido: era object-fit, no object-cover */
+    opacity: 0.5;
+    transition: transform 0.8s ease, opacity 0.5s ease;
+}
+
+.pcard-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0F172A 20%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pcard:hover {
+    transform: translateY(-12px);
+    border-color: #D4AF37;
+    box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.4);
+}
+
+.pcard:hover img {
+    transform: scale(1.15);
+    opacity: 0.3;
+}
+
+.pcard h3 {
+    color: #D4AF37;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.pcard p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.pcard ul li {
+    font-size: 11px;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 2.2;
+    opacity: 0;
+    transform: translateX(-10px); /* Cambié el efecto a deslizamiento lateral */
+    transition: all 0.4s ease;
+}
+
+.pcard:hover ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Delays para la lista */
+.pcard:hover ul li:nth-child(1) { transition-delay: 0.1s; }
+.pcard:hover ul li:nth-child(2) { transition-delay: 0.2s; }
+.pcard:hover ul li:nth-child(3) { transition-delay: 0.3s; }
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 64px;
+    height: 64px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría Estratégica | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/consultoria.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-text">
+                <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold">Inteligencia de Negocios</span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-none mt-4">
+                    Consultoría <br> <span class="text-gold">& Estrategia</span>
+                </h1>
+                <p class="text-slate-400 mt-8 text-lg max-w-xl leading-relaxed">
+                    Potenciamos el crecimiento de su organización mediante asesoría legal, estratégica y de gestión de calidad, adaptada a los desafíos del mercado actual.
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#soluciones" class="bg-gold text-midnight px-8 py-3 rounded-full font-bold hover:bg-white transition">Nuestras Soluciones</a>
+                </div>
+            </div>
+            
+            <div class="relative group reveal-img">
+                <div class="absolute -inset-1 bg-gold/20 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-gold/10 shadow-2xl">
+                    <img src="../assets/img/servicios/consultoria.png" alt="Consultoría Magna" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="soluciones" class="py-24 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-3xl font-bold uppercase tracking-widest text-gold">Pilares de Acción</h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div class="consulting-card">
+                <h3 class="text-xl font-bold text-gold uppercase mb-4">Derecho Laboral</h3>
+                <p class="text-slate-300">Asesoría jurídica integral en contratación, reglamentos internos y cumplimiento de la normativa laboral vigente.</p>
+            </div>
+            <div class="consulting-card">
+                <h3 class="text-xl font-bold text-gold uppercase mb-4">Gestión de Calidad</h3>
+                <p class="text-slate-300">Acompañamiento en la implementación de normas ISO y optimización de procesos internos para la excelencia operativa.</p>
+            </div>
+            <div class="consulting-card">
+                <h3 class="text-xl font-bold text-gold uppercase mb-4">Planes de Negocio</h3>
+                <p class="text-slate-300">Estructuración estratégica para nuevos proyectos, análisis de mercado y planes de expansión corporativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

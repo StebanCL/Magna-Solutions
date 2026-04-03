@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suministros Corporativos | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/suministros.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-fade">
+                <span class="text-gold uppercase tracking-[0.4em] text-xs font-black border border-gold/30 px-3 py-1">Stock & Operación</span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-none mt-6">
+                    Suministros <br> <span class="text-gold">Integrales</span>
+                </h1>
+                <p class="text-slate-400 mt-8 text-lg max-w-xl leading-relaxed">
+                    Todo lo que su empresa necesita en un solo lugar. Optimizamos su cadena de abastecimiento con productos de alta calidad en papelería, tecnología, aseo y cafetería.
+                </p>
+                <div class="mt-10">
+                    <a href="#inventario" class="inline-flex items-center gap-4 group">
+                        <span class="bg-white text-midnight w-12 h-12 rounded-full flex items-center justify-center font-bold group-hover:bg-gold transition-colors">📦</span>
+                        <span class="font-bold uppercase tracking-widest text-sm border-b border-gold/50 pb-1">Ver Categorías</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative reveal-zoom">
+                <div class="bg-shape"></div>
+                <div class="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+                    <img src="../assets/img/servicios/suministros.png" alt="Suministros Magna" class="w-full h-auto object-cover transform hover:scale-110 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="inventario" class="py-24 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="cat-card">
+                <div class="text-gold text-3xl mb-4">💻</div>
+                <h3 class="font-bold uppercase mb-2">Tecnología</h3>
+                <p class="text-slate-500 text-sm">Equipos de cómputo, periféricos, consumibles y accesorios de última generación.</p>
+            </div>
+            <div class="cat-card">
+                <div class="text-gold text-3xl mb-4">🖊️</div>
+                <h3 class="font-bold uppercase mb-2">Papelería</h3>
+                <p class="text-slate-500 text-sm">Artículos de oficina, impresión y papelería corporativa personalizada.</p>
+            </div>
+            <div class="cat-card">
+                <div class="text-gold text-3xl mb-4">🧼</div>
+                <h3 class="font-bold uppercase mb-2">Aseo y Desinfección</h3>
+                <p class="text-slate-500 text-sm">Insumos de limpieza institucional y protocolos de bioseguridad.</p>
+            </div>
+            <div class="cat-card">
+                <div class="text-gold text-3xl mb-4">☕</div>
+                <h3 class="font-bold uppercase mb-2">Cafetería</h3>
+                <p class="text-slate-500 text-sm">Café premium, snacks y productos de consumo masivo para áreas de descanso.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

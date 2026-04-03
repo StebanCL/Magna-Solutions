@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotaciones Industriales | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/dotaciones.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-text">
+                <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold">Imagen y Protección</span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-none mt-4">
+                    Dotaciones <br> <span class="text-gold">& EPP</span>
+                </h1>
+                <p class="text-slate-400 mt-8 text-lg max-w-xl leading-relaxed">
+                    Suministramos uniformes de alta resistencia y elementos de protección personal (EPP) que combinan seguridad, comodidad y la identidad corporativa de su empresa.
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#catalogo" class="bg-gold text-midnight px-8 py-3 rounded-full font-bold hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition">Explorar Catálogo</a>
+                </div>
+            </div>
+            
+            <div class="relative group reveal-img">
+                <div class="absolute -inset-1 bg-gold/30 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-gold/10">
+                    <img src="../assets/img/servicios/dotaciones.png" alt="Dotaciones Magna" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="catalogo" class="py-24 bg-slate-900/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="supply-card">
+                    <div class="icon-box">👕</div>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Uniformes Corporativos</h3>
+                    <p class="text-slate-400 text-sm">Prendas diseñadas para la comodidad diaria, con telas de alta durabilidad y acabados profesionales.</p>
+                </div>
+                <div class="supply-card">
+                    <div class="icon-box">🛡️</div>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Seguridad Industrial</h3>
+                    <p class="text-slate-400 text-sm">Elementos de protección personal (EPP) certificados: cascos, guantes, gafas y protección auditiva.</p>
+                </div>
+                <div class="supply-card">
+                    <div class="icon-box">👟</div>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Calzado Laboral</h3>
+                    <p class="text-slate-400 text-sm">Botas de seguridad y calzado ergonómico con punteras reforzadas y suelas antideslizantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-gold/10">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

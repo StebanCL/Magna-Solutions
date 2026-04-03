@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Servicios | Magna Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { midnight: '#0F172A', gold: '#D4AF37' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo/magna_logo.png">
+</head>
+
+<body class="bg-slate-50 text-midnight font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm text-white border-b border-gold/20">
+        <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest items-center">
+                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+                <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li>
+                    <a href="https://wa.me/573212681540" 
+                    target="_blank" 
+                    class="bg-gold text-midnight px-6 py-2 rounded-full hover:bg-white transition font-bold">
+                        WhatsApp
+                    </a>
+                </li>            
+            </ul>
+
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-midnight/98 border-t border-gold/10 w-full overflow-hidden transition-all duration-300">
+            <div class="flex flex-col items-center py-10 gap-6">
+                <a href="../index.html" class="text-xl uppercase tracking-widest">Inicio</a>
+                <a href="servicios.html" class="text-xl uppercase tracking-widest">Servicios</a>
+                <a href="../index.html#nosotros" class="text-xl uppercase tracking-widest">Nosotros</a>
+                <a href="https://wa.me/573212681540" 
+                target="_blank" 
+                class="bg-gold text-midnight px-6 py-4 rounded-full font-bold w-4/5 text-center">
+                    WhatsApp
+                </a>            
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-midnight relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white italic">
+                Nuestras <span class="text-gold">Líneas de Acción</span>
+            </h1>
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto text-lg">Explora nuestras soluciones integrales diseñadas para optimizar cada área de tu empresa.</p>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 reveal-grid">
+            
+            <a href="sst.html" class="pcard group">
+                <img src="../assets/img/servicios/sst.png" alt="SST">
+                <div class="pcard-overlay">
+                    <h3>Seguridad y Salud</h3>
+                    <p>Protección y cumplimiento normativo.</p>
+                    <ul>
+                        <li>• Diseño SG-SST</li>
+                        <li>• Auditorías</li>
+                        <li>• Capacitaciones</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="outsourcing.html" class="pcard group">
+                <img src="../assets/img/servicios/outsourcing.png" alt="Outsourcing">
+                <div class="pcard-overlay">
+                    <h3>Outsourcing</h3>
+                    <p>Contabilidad y apoyo administrativo.</p>
+                    <ul>
+                        <li>• Gestión Contable</li>
+                        <li>• Nómina Electrónica</li>
+                        <li>• Selección de Personal</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="mantenimiento.html" class="pcard group">
+                <img src="../assets/img/servicios/mantenimiento.png" alt="Mantenimiento">
+                <div class="pcard-overlay">
+                    <h3>Mantenimiento</h3>
+                    <p>Reparaciones y adecuaciones físicas.</p>
+                    <ul>
+                        <li>• Electricidad y Pintura</li>
+                        <li>• Plomería Industrial</li>
+                        <li>• Obra Civil Menor</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="logistica.html" class="pcard group">
+                <img src="../assets/img/servicios/logistica_eventos.png" alt="Logística">
+                <div class="pcard-overlay">
+                    <h3>Logística y Eventos</h3>
+                    <p>Organización y Team Building.</p>
+                    <ul>
+                        <li>• Eventos Corporativos</li>
+                        <li>• Olimpiadas</li>
+                        <li>• Refrigerios</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="dotaciones.html" class="pcard group">
+                <img src="../assets/img/servicios/dotaciones.png" alt="Dotaciones">
+                <div class="pcard-overlay">
+                    <h3>Dotaciones</h3>
+                    <p>Uniformes y mobiliario ergonómico.</p>
+                    <ul>
+                        <li>• Seguridad Industrial</li>
+                        <li>• Calzado Laboral</li>
+                        <li>• Sillas de Oficina</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="asistencias.html" class="pcard group">
+                <img src="../assets/img/servicios/asistencias.png" alt="Asistencias">
+                <div class="pcard-overlay">
+                    <h3>Asistencias</h3>
+                    <p>Servicios generales y bienestar.</p>
+                    <ul>
+                        <li>• Limpieza de Oficinas</li>
+                        <li>• Spa Empresarial</li>
+                        <li>• Jardinería</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="escolar.html" class="pcard group">
+                <img src="../assets/img/servicios/industria_escolar.png" alt="Mobiliario Escolar">
+                <div class="pcard-overlay">
+                    <h3>Industria Escolar</h3>
+                    <p>Mobiliario y entornos educativos.</p>
+                    <ul>
+                        <li>• Pupitres y Mesas</li>
+                        <li>• Tableros y Estantes</li>
+                        <li>• Diseño de Aulas</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="suministros.html" class="pcard group">
+                <img src="../assets/img/servicios/suministros.png" alt="Suministros">
+                <div class="pcard-overlay">
+                    <h3>Suministros</h3>
+                    <p>Insumos esenciales para su operación.</p>
+                    <ul>
+                        <li>• Papelería Corporativa</li>
+                        <li>• Cafetería y Aseo</li>
+                        <li>• Tecnología</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="consultoria.html" class="pcard group">
+                <img src="../assets/img/servicios/consultoria.png" alt="Consultoría">
+                <div class="pcard-overlay">
+                    <h3>Consultoría</h3>
+                    <p>Asesoría legal y estratégica.</p>
+                    <ul>
+                        <li>• Derecho Laboral</li>
+                        <li>• Gestión de Calidad</li>
+                        <li>• Planes de Negocio</li>
+                    </ul>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="bg-midnight py-12 text-center border-t border-gold/20">
+        <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Magna Solutions S.A.S.</p>
+    </footer>
+
+    <a href="https://wa.me/573212681540" target="_blank" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
