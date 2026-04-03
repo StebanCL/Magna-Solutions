@@ -22,22 +22,37 @@
 
 <body class="bg-midnight text-white font-sans overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm border-b border-gold/20">
+    <nav class="fixed w-full z-50 bg-midnight/95 backdrop-blur-sm text-white border-b border-gold/20">
         <div class="flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
-            <a href="../index.html" class="flex items-center gap-2">
-                <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Logo" class="h-10">
-            </a>
-            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
-                <li><a href="../index.html" class="hover:text-gold transition">Inicio</a></li>
-                <li><a href="servicios.html" class="text-gold">Servicios</a></li>
+            <div class="flex items-center gap-2">
+                <a href="../index.html">
+                    <img src="../assets/img/logo/logo_claro.jpg" alt="Magna Solutions Logo" class="h-10">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest items-center">
+                <li><a href="../index.html#inicio" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="servicios.html" class="hover:text-gold transition">Servicios</a></li>
                 <li><a href="../index.html#nosotros" class="hover:text-gold transition">Nosotros</a></li>
                 <li>
-                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold hover:bg-white transition">
+                    <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-6 py-2 rounded-full font-bold">
                         WhatsApp
                     </a>
-                </li>
+                </li>            
             </ul>
-            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer">☰</div>
+
+            <div id="hamburger" class="md:hidden text-gold text-3xl cursor-pointer p-2">☰</div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-midnight/98 border-t border-gold/10 w-full overflow-hidden">
+            <div class="flex flex-col items-center py-10 gap-6">
+                <a href="../index.html#inicio" class="text-xl uppercase tracking-widest mobile-link">Inicio</a>
+                <a href="servicios.html" class="text-xl uppercase tracking-widest mobile-link">Servicios</a>
+                <a href="../index.html#nosotros" class="text-xl uppercase tracking-widest mobile-link">Nosotros</a>
+                <a href="https://wa.me/573212681540" target="_blank" class="bg-gold text-midnight px-8 py-3 rounded-full font-bold mobile-link">
+                    WhatsApp
+                </a>             
+            </div>
         </div>
     </nav>
 
