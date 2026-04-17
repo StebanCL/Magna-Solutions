@@ -33,23 +33,48 @@
 /* Tarjetas de Eventos */
 .event-card {
     background: #000000;
-    padding: 3rem 2rem;
     border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.5s ease;
     cursor: default;
+    overflow: hidden;
+    position: relative;
+    height: 320px; /* Tamaño fijo para que todas sean iguales */
+}
+
+/* Sombra suave que nace desde abajo */
+.event-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* Degradado que termina en transparente, evitando el bloque negro */
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+/* Al hacer hover, la sombra desaparece para dejar ver el dorado */
+.event-card:hover::after {
+    opacity: 0;
 }
 
 .event-card:hover {
     background: #D4AF37;
     transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* El contenido debe estar por encima de la sombra */
+.event-card div {
+    z-index: 2;
+    position: relative;
 }
 
 .event-card:hover h3, 
 .event-card:hover p, 
 .event-card:hover span {
-    color: #000000;
-    opacity: 1;
+    color: #000000 !important;
 }
 
 /* Scrollbar */
