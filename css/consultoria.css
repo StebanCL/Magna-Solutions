@@ -21,7 +21,7 @@
 
 /* Tarjetas con diseño sobrio y profesional */
 .consulting-card {
-    background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.9));
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
     padding: 3rem 2rem;
     border-radius: 1.5rem;
     border-left: 4px solid #D4AF37;
@@ -40,7 +40,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #0F172A;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {

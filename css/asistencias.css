@@ -22,7 +22,7 @@
 
 /* Tarjetas de características con Glassmorphism */
 .feature-card {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(212, 175, 55, 0.1);
     padding: 2.5rem;
     border-radius: 2rem;
@@ -34,7 +34,7 @@
     transform: translateY(-10px);
     border-color: #D4AF37;
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /* Scrollbar personalizada para el look de gama alta */
@@ -43,7 +43,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #0F172A;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {

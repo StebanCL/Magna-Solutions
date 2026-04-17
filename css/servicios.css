@@ -9,7 +9,7 @@ a.pcard {
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
-    background-color: #0F172A;
+    background-color: #000000;
     border: 1px solid rgba(212, 175, 55, 0.2);
     height: 450px;
     cursor: pointer;
@@ -27,7 +27,7 @@ a.pcard {
 .pcard-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, #0F172A 20%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
+    background: linear-gradient(to top, #000000 20%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
     padding: 2rem;
     display: flex;
     flex-direction: column;

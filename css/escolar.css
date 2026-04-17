@@ -36,7 +36,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.8) 0%, transparent 40%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 40%);
     z-index: 15;
 }
 
@@ -58,7 +58,7 @@
     z-index: 20;
     padding: 20px 30px;
     border-radius: 2rem;
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     border-left: 5px solid #D4AF37;
     pointer-events: none;
@@ -86,7 +86,7 @@
 
 .carousel-btn:hover {
     background: #D4AF37;
-    color: #0F172A;
+    color: #000000;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
 
@@ -175,7 +175,7 @@
     align-items: center;
     gap: 1rem;
     background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
-    color: #0F172A;
+    color: #000000;
     padding: 1.2rem 3rem;
     border-radius: 9999px;
     font-size: 0.85rem;

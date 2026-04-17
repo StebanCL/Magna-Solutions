@@ -21,7 +21,7 @@
 
 /* Tarjetas de Suministro */
 .supply-card {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 3rem 2rem;
     border-radius: 2.5rem;
@@ -46,7 +46,7 @@
 .supply-card:hover {
     transform: translateY(-15px);
     border-color: rgba(212, 175, 55, 0.3);
-    background: rgba(30, 41, 59, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .supply-card:hover::before {
